@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  sans-serif;
+
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url(star.png),linear-gradient(to bottom,#391eb39c,rgb(6, 21, 11));
+
+}
+.content .ramadan {
+    background: linear-gradient(to left,#aec9cf,#153b41);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 0 20px #00000066;
+    animation:ahmed 10s linear 2s infinite alternate both running  ;
+
+}
+.h {
+    position: absolute ;
+    bottom: 80px;
+    left: 20px;
+    font-size: 40px;
+    color: #080d41;
+    font-weight: 700;
+}
+
+
+@keyframes ahmed {
+
+0% {
+    translate: 0 0;
+}
+
+25% {
+    translate: 300px -200px;
+}
+
+50% {
+    translate: 200px -200px;
+}
+
+75% {
+    translate: 300px -200px;
+}
+
+100% {
+    translate: -200px 300px;
+} 
+
+}
+
+
+@media (max-width: 600px) {
+    .h {
+        position: absolute ;
+        bottom: 60px;
+        left: 28px;
+        font-size: 23px;
+        color: #080d41;
+        font-weight: 700;
+    }
+    .content .ramadan {
+        background: linear-gradient(to left,#aec9cf,#153b41);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 0 20px #00000066;
+        animation:ahmed 10s linear 2s infinite alternate both running  ;
+
+}
+
+
+
+@keyframes ahmed {
+
+    0% {
+        translate: 0 0;
+    }
+    
+    25% {
+        translate: -20px 20px;
+    }
+    
+    50% {
+        translate: -50px 50px;
+    }
+    
+    75% {
+        translate: -80px 80px;
+    }
+    
+    100% {
+        translate: -100px 100px;
+    } 
+    
+    }
+}
